@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Planet {
+    // some information of planet
+}
