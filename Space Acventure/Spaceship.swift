@@ -64,14 +64,23 @@ class Spaceship {
                 print("Ok! Exploring planet randomly...")
                 // TODO: explore to random planet
             case "N":
-                print("Ok, please select a planet to explore...")
-                // TODO: let the user select a planet to explore
+                let planetName = responseToPrompt("OK, please select a planet to explore...")
+                departure(to: planetName)
             default:
                 print("Sorry, I didn't get that.")
             }
         }
     }
     
+    private func departure(to planetName: String) {
+        print("Arrived on \(planetName)!")
+        for planet in availablePlanetarySystem.planets {
+            if planetName == planet.name {
+                print("The \(planet.name) has a diameter of \(planet.diameter) km.")
+            }
+        }
+    }
+
     private func responseToPrompt(_ prompt: String) -> String {
         print(prompt)
         return readLine()!
