@@ -10,10 +10,12 @@ import Foundation
 class Spaceship {
     var pilot: String? = nil
     let name: String
-    let availablePlanetarySystem = PlanetarySystem(name: "Solar system", planets: [Planet]())
+    var availablePlanetarySystem = PlanetarySystem(name: "Solar system", planets: [Planet]())
 
     init(name: String) {
         self.name = name
+        let mercury = Planet(name: "Mercury", diameter: 4880)
+        self.availablePlanetarySystem.planets.append(mercury)
     }
     
     func activate() {
