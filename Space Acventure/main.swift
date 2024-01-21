@@ -36,3 +36,4 @@ while !(decision == "Y" || decision == "N") {
     }
 }
 
+let mySpaceship = Spaceship(name: "Millennium Falcon")
