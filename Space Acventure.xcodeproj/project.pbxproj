@@ -10,7 +10,7 @@
 		A4D8D9432B5CC8830044FAB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D9422B5CC8830044FAB9 /* main.swift */; };
 		A4D8D94A2B5CFA9E0044FAB9 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D9492B5CFA9E0044FAB9 /* Spaceship.swift */; };
 		A4D8D94C2B5D0D510044FAB9 /* PlanetarySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D94B2B5D0D510044FAB9 /* PlanetarySystem.swift */; };
-		A4D8D94E2B5D142E0044FAB9 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D94D2B5D142E0044FAB9 /* Planet.swift */; };
+		A4D8D9512B5D19240044FAB9 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D9502B5D19240044FAB9 /* Planet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +30,7 @@
 		A4D8D9422B5CC8830044FAB9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A4D8D9492B5CFA9E0044FAB9 /* Spaceship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
 		A4D8D94B2B5D0D510044FAB9 /* PlanetarySystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetarySystem.swift; sourceTree = "<group>"; };
-		A4D8D94D2B5D142E0044FAB9 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = SOURCE_ROOT; };
+		A4D8D9502B5D19240044FAB9 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				A4D8D9422B5CC8830044FAB9 /* main.swift */,
+				A4D8D9502B5D19240044FAB9 /* Planet.swift */,
 				A4D8D9492B5CFA9E0044FAB9 /* Spaceship.swift */,
 				A4D8D94B2B5D0D510044FAB9 /* PlanetarySystem.swift */,
-				A4D8D94D2B5D142E0044FAB9 /* Planet.swift */,
 			);
 			path = "Space Acventure";
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 				A4D8D94C2B5D0D510044FAB9 /* PlanetarySystem.swift in Sources */,
 				A4D8D94A2B5CFA9E0044FAB9 /* Spaceship.swift in Sources */,
 				A4D8D9432B5CC8830044FAB9 /* main.swift in Sources */,
-				A4D8D94E2B5D142E0044FAB9 /* Planet.swift in Sources */,
+				A4D8D9512B5D19240044FAB9 /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
