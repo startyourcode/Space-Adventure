@@ -16,13 +16,8 @@ class Spaceship {
     }
     
     func activate() {
-        let numberOfPlanets = 8
-        let diameterOfEarth = 12756.274
-
-        print("Here is the solar system!")
-        print("There are \(numberOfPlanets) planets to explore.")
-        print("Diameter of The Earth is \(diameterOfEarth) km.")
-
+        displayIntroduction()
+        
         print("What is your name?")
         let yourName = readLine()!
         print("Hi, \(yourName).")
@@ -44,5 +39,14 @@ class Spaceship {
                 print("Sorry, I didn't get that.")
             }
         }
+    }
+    
+    private func displayIntroduction() {
+        let numberOfPlanets = 8
+        let diameterOfEarth = 12756.274 // In km
+        
+        print("Here is the solar system!")
+        print("There are \(numberOfPlanets) planets to explore.")
+        print("Diameter of The Earth is \(diameterOfEarth) km.")
     }
 }
