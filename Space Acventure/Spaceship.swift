@@ -8,7 +8,7 @@
 import Foundation
 
 class Spaceship {
-    var pilotName: String? = nil
+    var pilot: String? = nil
     let name: String
     let availablePlanetarySystem = PlanetarySystem(name: "Solar system")
 
@@ -32,8 +32,8 @@ class Spaceship {
     }
 
     private func greeting() {
-        let yourName = responseToPrompt("What is your name?")
-        print("Hi, \(yourName).")
+        pilot = responseToPrompt("What is your name?")
+        print("Hi, \(pilot!).")
     }
 
     private func determineDestination() {
