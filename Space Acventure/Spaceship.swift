@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class Spaceship {
+    var pilotName: String? = nil
+    let name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+}
