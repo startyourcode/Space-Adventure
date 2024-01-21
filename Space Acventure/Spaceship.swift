@@ -18,7 +18,24 @@ class Spaceship {
     func activate() {
         displayIntroduction()
         greeting()
+        determineDestination()
+    }
+    
+    private func displayIntroduction() {
+        let numberOfPlanets = 8
+        let diameterOfEarth = 12756.274 // In km
+        
+        print("Here is the solar system!")
+        print("There are \(numberOfPlanets) planets to explore.")
+        print("Diameter of The Earth is \(diameterOfEarth) km.")
+    }
 
+    private func greeting() {
+        let yourName = responseToPrompt("What is your name?")
+        print("Hi, \(yourName).")
+    }
+
+    private func determineDestination() {
         var decision = ""
         while !(decision == "Y" || decision == "N") {
             decision = responseToPrompt("Choose a planet to visit, randomly? (Y or N)")
@@ -36,23 +53,8 @@ class Spaceship {
         }
     }
     
-    private func displayIntroduction() {
-        let numberOfPlanets = 8
-        let diameterOfEarth = 12756.274 // In km
-        
-        print("Here is the solar system!")
-        print("There are \(numberOfPlanets) planets to explore.")
-        print("Diameter of The Earth is \(diameterOfEarth) km.")
-    }
-    
     private func responseToPrompt(_ prompt: String) -> String {
         print(prompt)
         return readLine()!
     }
-    
-    private func greeting() {
-        let yourName = responseToPrompt("What is your name?")
-        print("Hi, \(yourName).")
-    }
-
 }
