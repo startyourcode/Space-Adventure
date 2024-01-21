@@ -9,4 +9,5 @@ import Foundation
 
 struct PlanetarySystem {
     let name: String
+    let planets: [Planet]
 }

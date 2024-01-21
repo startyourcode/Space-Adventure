@@ -10,7 +10,7 @@ import Foundation
 class Spaceship {
     var pilot: String? = nil
     let name: String
-    let availablePlanetarySystem = PlanetarySystem(name: "Solar system")
+    let availablePlanetarySystem = PlanetarySystem(name: "Solar system", planets: [Planet]())
 
     init(name: String) {
         self.name = name
@@ -23,11 +23,10 @@ class Spaceship {
     }
     
     private func displayIntroduction() {
-        let numberOfPlanets = 8
         let diameterOfEarth = 12756.274 // In km
         
         print("Here is the \(availablePlanetarySystem.name)!")
-        print("There are \(numberOfPlanets) planets to explore.")
+        print("There are \(availablePlanetarySystem.planets.count) planets to explore.")
         print("Diameter of The Earth is \(diameterOfEarth) km.")
     }
 
