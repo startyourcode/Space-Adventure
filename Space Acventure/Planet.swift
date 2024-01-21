@@ -8,5 +8,6 @@
 import Foundation
 
 struct Planet {
-    // some information of planet
+    let name: String
+    let diameter: Int
 }
