@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A4D8D9432B5CC8830044FAB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D9422B5CC8830044FAB9 /* main.swift */; };
 		A4D8D94A2B5CFA9E0044FAB9 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D9492B5CFA9E0044FAB9 /* Spaceship.swift */; };
+		A4D8D94C2B5D0D510044FAB9 /* PlanetarySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D94B2B5D0D510044FAB9 /* PlanetarySystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		A4D8D93F2B5CC8830044FAB9 /* Space Acventure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Space Acventure"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D8D9422B5CC8830044FAB9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A4D8D9492B5CFA9E0044FAB9 /* Spaceship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
+		A4D8D94B2B5D0D510044FAB9 /* PlanetarySystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetarySystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				A4D8D9422B5CC8830044FAB9 /* main.swift */,
 				A4D8D9492B5CFA9E0044FAB9 /* Spaceship.swift */,
+				A4D8D94B2B5D0D510044FAB9 /* PlanetarySystem.swift */,
 			);
 			path = "Space Acventure";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D8D94C2B5D0D510044FAB9 /* PlanetarySystem.swift in Sources */,
 				A4D8D94A2B5CFA9E0044FAB9 /* Spaceship.swift in Sources */,
 				A4D8D9432B5CC8830044FAB9 /* main.swift in Sources */,
 			);

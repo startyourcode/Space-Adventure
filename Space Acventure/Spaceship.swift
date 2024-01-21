@@ -8,9 +8,10 @@
 import Foundation
 
 class Spaceship {
-    var pilotName: String? = nil
+    var pilot: String? = nil
     let name: String
-    
+    let availablePlanetarySystem = PlanetarySystem(name: "Solar system")
+
     init(name: String) {
         self.name = name
     }
@@ -25,14 +26,14 @@ class Spaceship {
         let numberOfPlanets = 8
         let diameterOfEarth = 12756.274 // In km
         
-        print("Here is the solar system!")
+        print("Here is the \(availablePlanetarySystem.name)!")
         print("There are \(numberOfPlanets) planets to explore.")
         print("Diameter of The Earth is \(diameterOfEarth) km.")
     }
 
     private func greeting() {
-        let yourName = responseToPrompt("What is your name?")
-        print("Hi, \(yourName).")
+        pilot = responseToPrompt("What is your name?")
+        print("Hi, \(pilot!).")
     }
 
     private func determineDestination() {
