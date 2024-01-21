@@ -10,4 +10,10 @@ import Foundation
 struct PlanetarySystem {
     let name: String
     var planets: [Planet]
+
+    var randomPlanet: Planet? {
+        if planets.isEmpty { return nil }
+        let randomIndex = Int.random(in: 0..<planets.count)
+        return planets[randomIndex]
+    }
 }

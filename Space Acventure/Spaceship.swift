@@ -12,6 +12,14 @@ class Spaceship {
     let name: String
     var availablePlanetarySystem = PlanetarySystem(name: "Solar system", planets: [Planet]())
 
+    var status: Status {
+        if availablePlanetarySystem.planets.isEmpty {
+            return .notReady
+        } else {
+            return .ready
+        }
+    }
+
     init(name: String) {
         self.name = name
         
@@ -38,7 +46,12 @@ class Spaceship {
     func activate() {
         displayIntroduction()
         greeting()
-        determineDestination()
+        if status == .ready {
+            print("\(name) is ready!")
+            determineDestination()
+        } else {
+            print("System is not ready...")
+        }
     }
     
     private func displayIntroduction() {
@@ -61,8 +74,11 @@ class Spaceship {
             
             switch decision {
             case "Y":
-                print("Ok! Exploring planet randomly...")
-                // TODO: explore to random planet
+                if let randomPlanet = availablePlanetarySystem.randomPlanet {
+                    departure(to: randomPlanet.name)
+                } else {
+                    print("No planet in this system...")
+                }
             case "N":
                 let planetName = responseToPrompt("OK, please select a planet to explore...")
                 departure(to: planetName)
@@ -84,5 +100,11 @@ class Spaceship {
     private func responseToPrompt(_ prompt: String) -> String {
         print(prompt)
         return readLine()!
+    }
+    
+    enum Status {
+        case notReady
+        case standby
+        case ready
     }
 }
