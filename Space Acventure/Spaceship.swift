@@ -17,9 +17,7 @@ class Spaceship {
     
     func activate() {
         displayIntroduction()
-        
-        let yourName = responseToPrompt("What is your name?")
-        print("Hi, \(yourName).")
+        greeting()
 
         var decision = ""
         while !(decision == "Y" || decision == "N") {
@@ -51,4 +49,10 @@ class Spaceship {
         print(prompt)
         return readLine()!
     }
+    
+    private func greeting() {
+        let yourName = responseToPrompt("What is your name?")
+        print("Hi, \(yourName).")
+    }
+
 }
