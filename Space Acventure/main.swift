@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+print("Here is the solar system!")
 
+let numberOfPlanets = 8
+let diameterOfEarth = 12756.274
+
+print("There are \(numberOfPlanets) planets to explore.")
+print("Diameter of The Earth is \(diameterOfEarth) km.")
