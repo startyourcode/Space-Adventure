@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct PlanetarySystem {
+    let name: String
+}
