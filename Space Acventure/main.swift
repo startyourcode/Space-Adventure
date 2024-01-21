@@ -19,12 +19,20 @@ let yourName = readLine()!
 print("Hi, \(yourName).")
 
 print("Choose a planet to explore, randomly? (Y or N)")
-let decision = readLine()!
+var decision = ""
 
-if decision == "Y" {
-    print("OK! Exploring planet randomly...")
-    // TODO: explore to random planet
-} else {
-    print("OK, Please select a planet to explore...")
-    // TODO: let the user select a planet to explore
+while !(decision == "Y" || decision == "N") {
+    decision = readLine()!
+    
+    switch decision {
+    case "Y":
+        print("Ok! Exploring planet randomly...")
+        // TODO: explore to random planet
+    case "N":
+        print("Ok, please select a planet to explore...")
+        // TODO: let the user select a planet to explore
+    default:
+        print("Sorry, I didn't get that.")
+    }
 }
+
