@@ -10,7 +10,7 @@ import Foundation
 class Spaceship {
     var pilot: String? = nil
     let name: String
-    var availablePlanetarySystem = PlanetarySystem(name: "Solar system", planets: [Planet]())
+    var availablePlanetarySystem: PlanetarySystem
 
     var status: Status {
         if availablePlanetarySystem.planets.isEmpty {
@@ -20,27 +20,9 @@ class Spaceship {
         }
     }
 
-    init(name: String) {
+    init(name: String, availablePlanetarySystem: PlanetarySystem) {
         self.name = name
-        
-        // TODO: These codes are iterative.
-        let mercury = Planet(name: "Mercury", diameter: 4880)
-        let venus   = Planet(name: "Venus",   diameter: 12_104)
-        let earth   = Planet(name: "Earth",   diameter: 12_756)
-        let mars    = Planet(name: "Mars",    diameter: 6_788)
-        let jupiter = Planet(name: "Jupiter", diameter: 142_984)
-        let saturn  = Planet(name: "Saturn",  diameter: 120_536)
-        let uranus  = Planet(name: "Uranus",  diameter: 51_118)
-        let neptune = Planet(name: "Neptune", diameter: 49_532)
-
-        self.availablePlanetarySystem.planets.append(mercury)
-        self.availablePlanetarySystem.planets.append(venus)
-        self.availablePlanetarySystem.planets.append(earth)
-        self.availablePlanetarySystem.planets.append(mars)
-        self.availablePlanetarySystem.planets.append(jupiter)
-        self.availablePlanetarySystem.planets.append(saturn)
-        self.availablePlanetarySystem.planets.append(uranus)
-        self.availablePlanetarySystem.planets.append(neptune)
+        self.availablePlanetarySystem = availablePlanetarySystem
     }
     
     func activate() {
