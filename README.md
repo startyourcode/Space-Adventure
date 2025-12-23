@@ -86,7 +86,7 @@ macOSのApplicationテンプレートから「Command Line Tool」を選択し�
 7. 文字列リテラル`"Hello World!"`を、以下のように変更してください。
 さらに、説明文を追加します。
 
-    ```swift
+    ```swift: main.swift
     print("Here is the solar system!")
     print("There are 8 planets to explore.")
     print("Diameter of The Earth is 12756.274 km.")
@@ -103,7 +103,7 @@ macOSのApplicationテンプレートから「Command Line Tool」を選択し�
 
 9. 「太陽系に存在する惑星の数」と「地球の直径」を示す2つの定数を定義します。
 
-    ```swift
+    ```swift: main.swift
     let numberOfPlanets: Int = 8
     let diameterOfEarth: Double = 12756.274
 
@@ -114,7 +114,7 @@ macOSのApplicationテンプレートから「Command Line Tool」を選択し�
     
 10. これらの定数を使って、文字列を補間してください。
 
-    ```swift
+    ```swift: main.swift
     print("Here is the solar system!")
     print("There are \(numberOfPlanets) planets to explore.")
     print("Diameter of The Earth is \(diameterOfEarth) km.")
@@ -132,7 +132,7 @@ macOSのApplicationテンプレートから「Command Line Tool」を選択し�
 
 12. 定数宣言の型アノテーションを省略してください。
 
-    ```swift
+    ```swift: main.swift
     let numberOfPlanets = 8
     let diameterOfEarth = 12756.274
     ```
